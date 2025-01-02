@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Transfer - Ghana</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #014421, #008037);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(to right, #014421, #008037);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        header p {
+            margin: 0.5rem 0 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .button-container button {
+            background-color: #f4b400;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .button-container button:hover {
+            transform: scale(1.05);
+        }
+
+        .hero-image {
+            margin-top: 2rem;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem;
+            padding: 1rem;
+        }
+
+        .feature-card {
+            background-color: #fff;
+            color: #333;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            color: #014421;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #014421;
+            color: #fff;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Send Money</h1>
+        <p>Using Mobile, Using MoMo, Using Ghana</p>
+        <div class="button-container">
+            <button>Send Money</button>
+            <button>Sign Up</button>
+        </div>
+        <img class="hero-image" src="/path-to-image/hero-image.jpg" alt="Hero Graphic">
+    </header>
+
+    <main>
+        <section class="features">
+            <div class="feature-card">
+                <img src="/path-to-image/icon1.png" alt="Feature Icon">
+                <h3>Secure Payments</h3>
+                <p>Experience end-to-end encryption.</p>
+            </div>
+            <div class="feature-card">
+                <img src="/path-to-image/icon2.png" alt="Feature Icon">
+                <h3>Fast Transactions</h3>
+                <p>Money transfers in minutes.</p>
+            </div>
+            <div class="feature-card">
+                <img src="/path-to-image/icon3.png" alt="Feature Icon">
+                <h3>Reliable Service</h3>
+                <p>Trusted by millions in Ghana.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Money Transfer. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

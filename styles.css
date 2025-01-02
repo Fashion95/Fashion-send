@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background-color: #ff6347;  /* Tomato color for a vibrant header */
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 0.5em 0 0;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+/* Main Section */
+main {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 2em;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ff6347;  /* Tomato color for headings */
+    margin-bottom: 1.5em;
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 0.5em 0 0.2em;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border: 2px solid #f5a623; /* Light orange border */
+    border-radius: 10px;
+    font-size: 1.1em;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #ff6347; /* Tomato color on focus */
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.6); /* Soft tomato glow */
+}
+
+button {
+    background-color: #ff6347;  /* Tomato color for buttons */
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #e5533b;
+    transform: scale(1.05);  /* Slight scale effect for button */
+}
+
+button:active {
+    transform: scale(1.02);  /* Button presses slightly */
+}
+
+#feeDisplay {
+    font-size: 1.3em;
+    color: #e5533b;  /* Light red for fee */
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/* Transaction History */
+.transaction-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transaction-history li {
+    background-color: #eaf7ff;  /* Light blue background for transaction entries */
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.transaction-history li:hover {
+    background-color: #d1ecf1;  /* Lighter blue on hover */
+    transform: translateY(-5px);  /* Hover effect */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #ff6347;  /* Tomato color footer */
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    main {
+        padding: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    button {
+        padding: 0.8em 1.8em;
+    }
+
+    input, select {
+        padding: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    button {
+        padding: 0.7em 1.5em;
+    }
+
+    input, select {
+        padding: 0.8em;
+    }
+}
